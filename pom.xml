@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
 
     <name>code-generator-dependencies</name>
+    <description>dependencies pom of code-generator</description>
     <url>https://github.com/yhl452493373/CodeGeneratorDependencies</url>
 
     <properties>
