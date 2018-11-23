@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.yhl452493373</groupId>
+    <artifactId>code-generator-dependencies</artifactId>
+    <version>1.1.4</version>
+    <packaging>pom</packaging>
+
+    <name>code-generator</name>
+    <url>https://github.com/yhl452493373/CodeGeneratorDependencies</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <mysql-connector-java.version>5.1.47</mysql-connector-java.version>
+        <mybatis-plus.version>3.0.6</mybatis-plus.version>
+        <fastjson.version>1.2.51</fastjson.version>
+        <shiro.version>1.4.0</shiro.version>
+        <shiro-freemarker-tags.version>1.0.0</shiro-freemarker-tags.version>
+        <druid.version>1.1.12</druid.version>
+        <snakeyaml.version>1.23</snakeyaml.version>
+        <mybatis-ehcache.version>1.1.0</mybatis-ehcache.version>
+        <code-generator.version>1.1.4</code-generator.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.github.yhl452493373</groupId>
+                <artifactId>code-generator</artifactId>
+                <version>${code-generator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector-java.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <!--mysql驱动-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <!--以上为mybatis-plus，代替mybatis-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <!--以上为fastjson-->
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-core</artifactId>
+                <version>${shiro.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-spring</artifactId>
+                <version>${shiro.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <!--以上为shiro-->
+            <dependency>
+                <groupId>net.mingsoft</groupId>
+                <artifactId>shiro-freemarker-tags</artifactId>
+                <version>${shiro-freemarker-tags.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <!--以上为freemarker中使用shiro标签的依赖包-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <!--以上为阿里巴巴数据源-->
+            <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>${snakeyaml.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <!--解析yml文件的包-->
+            <dependency>
+                <groupId>org.mybatis.caches</groupId>
+                <artifactId>mybatis-ehcache</artifactId>
+                <version>${mybatis-ehcache.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <!-- mybatis plus开启二级缓存依赖包,不使用二级缓存可以不导入 -->
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.github.yhl452493373</groupId>
+            <artifactId>code-generator</artifactId>
+        </dependency>
+    </dependencies>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/yhl452493373/CodeGenerator</url>
+        <connection>git@github.com:yhl452493373/CodeGenerator.git</connection>
+        <developerConnection>https://github.com/yhl452493373/CodeGenerator</developerConnection>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>YangHuanglin</name>
+            <email>yanghuanglin@qq.com</email>
+            <url>https://github.com/yhl452493373</url>
+        </developer>
+    </developers>
+</project>
