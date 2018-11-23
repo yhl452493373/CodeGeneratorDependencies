@@ -116,9 +116,9 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/yhl452493373/CodeGenerator</url>
-        <connection>git@github.com:yhl452493373/CodeGenerator.git</connection>
-        <developerConnection>https://github.com/yhl452493373/CodeGenerator</developerConnection>
+        <url>https://github.com/yhl452493373/CodeGeneratorDependencies</url>
+        <connection>git@github.com:yhl452493373/CodeGeneratorDependencies.git</connection>
+        <developerConnection>https://github.com/yhl452493373/CodeGeneratorDependencies</developerConnection>
     </scm>
 
     <developers>
