@@ -6,7 +6,7 @@
 
     <groupId>com.github.yhl452493373</groupId>
     <artifactId>code-generator-dependencies</artifactId>
-    <version>1.1.6</version>
+    <version>1.1.7</version>
     <packaging>pom</packaging>
 
     <name>code-generator-dependencies</name>
@@ -25,7 +25,7 @@
         <druid.version>1.1.12</druid.version>
         <snakeyaml.version>1.23</snakeyaml.version>
         <mybatis-ehcache.version>1.1.0</mybatis-ehcache.version>
-        <code-generator.version>1.1.6</code-generator.version>
+        <code-generator.version>1.1.7</code-generator.version>
     </properties>
 
     <dependencyManagement>
